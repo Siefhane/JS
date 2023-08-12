@@ -60,8 +60,8 @@ button {
   height: 500px;object-fit: cover; 
 } */
 #divcover {
-  background-image: url(https://placehold.co/300x300);
-  height: 400px;
+  background-image: url(/image/im5.jpg);
+  height: 426px;
   background-size: cover;
   /* width: 2900px; */
   background-repeat: no-repeat;
@@ -113,6 +113,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 svg {
   margin: 20px;
