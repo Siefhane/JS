@@ -76,7 +76,7 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10%;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 #circle {
   width: 200px;
@@ -126,6 +126,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 .introtext h2,
 .introtext h3,
@@ -144,9 +145,6 @@ svg {
   width: 200px;
   color: black;
 }
-#divv {
-}
-
 #arc4 {
   display: flex;
 }
