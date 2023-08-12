@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+button {
+  background-color: #99e54d;
+  border: 0;
+}
+button:hover {
+  background-color: #f1ae0e;
+}
+#yourCart {
+  background-color: #f1ae0e;
+}
+#main {
+  display: grid;
+  grid-template-columns: 600px auto auto;
+  grid-template-areas:
+    "leftSec centerSec rightSec"
+    "leftSec centerSec rightSec"
+    "leftSec centerSec rightSec"
+    "leftSec centerSec rightSec";
+  grid-gap: 10px;
+}
+#leftSection {
+  grid-area: leftSec;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+  /* align-content: center; */
+}
+
+#centerSection {
+  grid-area: centerSec;
+  /* display: flex;
+    align-items: center; */
+  grid-template-columns: 1fr;
+}
+#rightSection {
+  grid-area: rightSec;
+}
+#addRem {
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+  align-items: start;
+}
+.m {
+  padding: 30px 45%;
+  padding-left: 0;
+  /* width: 100%; */
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+  align-self: flex-start;
+  /* margin-left: 50px; */
+}
+.imf {
+  width: 200px;
+  border-radius: 40px;
+  margin-right: 10%;
+}
+section {
+  /* text-align: center; */
+}
+table {
+  position: fixed;
+  width: 20%;
+  height: 20%;
+  background-color: #f1ae0e;
+  text-align: center;
+}
+#default {
+  /* text-align: center; */
+  display: none;
+}
+#ccart {
+  text-align: center;
+  margin: auto;
+}
+#yourCart {
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+p {
+}
+#centerSection button,
+#noCart p {
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+}
+#centerSection button {
+  background-color: #f1ae0e;
+}
+#centerSection button {
+  position: relative;
+  bottom: 90px;
+  border-radius: 50%;
+}
+#centerSection button:active {
+  background-color: #f1ae0e;
+}
+section {
+  /* display: block; */
+}
+#noCart {
+  text-align: center;
+}
