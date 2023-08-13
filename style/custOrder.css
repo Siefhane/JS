@@ -16,21 +16,11 @@ button:hover {
   background-color: #f1ae0e;
 }
 #main {
-  width: 100%;
-  grid-gap: 10px;
-  flex-wrap: wrap;
 }
 #leftSection {
-  display: flex;
   justify-content: space-between;
 }
-
-#rightSection {
-  position: relative;
-  top: 30px;
-}
 .m {
-  /* padding: 30px 45%; */
   background-color: black;
   color: #f1ae0e;
   padding-left: 0;
@@ -43,14 +33,18 @@ button:hover {
   flex: 1;
   flex-basis: 50%;
 }
+section{
+  text-align: center;
+}
+
 .imf {
-  width: 400px;
+  width: 440px;
   border-radius: 40px;
-  margin-right: 10%;
+  margin-right: 3%;
   margin-bottom: 20px;
 }
 table {
-  width: 90%;
+  width: 100%;
   height: 200px;
   background-color: #f1ae0e;
   text-align: center;
@@ -73,13 +67,19 @@ table {
 p {
   padding-bottom: 30px;
 }
+#centerSection{
+  text-align: center;
+  margin: auto;
+}
 #centerSection button,
 #noCart p {
   padding: 20px;
-  /* margin: 20px; */
   margin: auto;
   font-size: 20px;
   color: black;
+}
+#main p{
+  margin-left: 30px;
 }
 #centerSection button {
   background-color: #f1ae0e;
@@ -97,9 +97,4 @@ p {
 }
 #noCart {
   text-align: center;
-}
-@media screen and (max-width: 1835px) {
-  #main {
-    grid-template-columns: repeat(2, 40%);
-  }
 }
