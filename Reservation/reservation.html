@@ -4,36 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/style/reservation.css">
+    <link rel="stylesheet" href="/style/reservation.css" />
   </head>
   <body>
     <h1>Make a Reservation</h1>
     <div id="main">
-    <form action="">
-      <label>
-        <input type="text" placeholder="Enter your full name" />
-      </label>
-      <label>
-        <input type="number" placeholder="Number of family members" />
-      </label>
-      <label>
-        <input
-          type="number"
-          placeholder="Number of family members less than 7 years"
-        />
-      </label>
-      <label>
-        <input type="date" placeholder="Select a date" />
-      </label>
-      <br>  
-          <div id="rad">
-
-      <input type="radio" id="fawry" name="rad" />
-      <label for="fawry">Pay with Fawry </label>
-      <br>
-      <input type="radio" id="cash" name="rad"/>
-      <label for="cash">Pay Cash </label></div>
-     </div>
-    </form>
+      <form action="">
+        <label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your full name"
+            pattern="^[a-zA-Z]+$"
+            required
+          />
+        </label>
+        <label>
+          <input
+            id="number"
+            type="number"
+            placeholder="Number of family members"
+            min="0"
+            max="20"
+            required
+          />
+        </label>
+        <label>
+          <input
+            id="number2"
+            type="number"
+            placeholder="Number of family members less than 7 years"
+            min="0"
+            max="20"
+            required
+          />
+        </label>
+        <label>
+          <input id="date" type="date" placeholder="Select a date" required />
+        </label>
+        <br />
+        <div id="rad">
+          <input type="radio" id="fawry" name="rad" />
+          <label for="fawry">Pay with Fawry </label>
+          <br />
+          <input type="radio" id="cash" name="rad" />
+          <label for="cash">Pay Cash </label>
+        </div>
+        <input type="submit" onclick="reserve(event)" value="Submit" />
+      </form>
+    </div>
+    <script src="/scripts/reservation.js"></script>
   </body>
 </html>
