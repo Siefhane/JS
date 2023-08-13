@@ -16,32 +16,16 @@ button:hover {
   background-color: #f1ae0e;
 }
 #main {
-  display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  /* 600px auto auto; */
-  grid-template-areas:
-    "leftSec centerSec rightSec"
-    "leftSec centerSec "
-    "leftSec centerSec "
-    "leftSec centerSec ";
   grid-gap: 10px;
   flex-wrap: wrap;
-  grid-template-rows: 1fr !important;
-  grid-template-columns: 1fr !important;
 }
 #leftSection {
-  grid-area: leftSec;
   display: flex;
   justify-content: space-between;
 }
 
-#centerSection {
-  grid-area: centerSec;
-  grid-template-columns: 1fr;
-}
 #rightSection {
-  grid-area: rightSec;
   position: relative;
   top: 30px;
 }
@@ -63,16 +47,17 @@ button:hover {
   width: 400px;
   border-radius: 40px;
   margin-right: 10%;
+  margin-bottom: 20px;
 }
 table {
-  position: fixed;
-  width: 20%;
-  height: 20%;
+  width: 90%;
+  height: 200px;
   background-color: #f1ae0e;
   text-align: center;
 }
 #default {
   display: none;
+  color: black;
 }
 #ccart {
   text-align: center;
@@ -91,8 +76,10 @@ p {
 #centerSection button,
 #noCart p {
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; */
+  margin: auto;
   font-size: 20px;
+  color: black;
 }
 #centerSection button {
   background-color: #f1ae0e;
@@ -100,7 +87,10 @@ p {
 #centerSection button {
   position: relative;
   bottom: 90px;
-  border-radius: 50%;
+  border-radius: 30%;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #centerSection button:active {
   background-color: #f1ae0e;
