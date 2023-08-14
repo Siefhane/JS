@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Received Cookies</title>
+  <link rel="stylesheet" href="/style/invoice.css">
+</head>
+<body>
+  <div class="container">
+    <div class="invoice">
+      <header>
+        <section id="head">
+          <h1>Invoice</h1>
+          <span id="dateNow"></span>
+        </section>
+  
+        <section id="code">
+          <span id="codeV">89 289</span>
+        </section>
+      </header>
+  
+      <main>
+        <section id="total">
+          <div class="t">          
+            <span>Delivery</span>
+            <span id="Dvalue"></span>
+          </div>
+          <div class="t">
+            <span>Total</span>
+            <span id="Tvalue"></span>
+          </div>
+        </section>
+      </main>
+  
+      <footer>
+       <input type="submit" value="Pay Now" id="pay" onclick="paynow()">
+       <div class="loading"id="loading">
+        <div class="outer-circle" id="circle">
+          <div class="inner-circle"></div>
+        <p id="load">loading</p>  
+        </div>
+      </div>
+      </footer>
+    </div>
+  </div>
+  <script src="/scripts/js.js"> 
+  </script>
+</body>
+</html>
