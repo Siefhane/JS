@@ -8,9 +8,9 @@ function OrderNow(event) {
   var price = parseInt(
     document.getElementById(event.target.className).textContent
   );
-  // arr.unshift(
-  //   document.getElementById("p" + event.target.className.substring(4)).innerText
-  // );
+  arr.unshift(
+    document.getElementById("p" + event.target.className.substring(4)).innerText
+  );
   console.log(arr[0]);
   document.getElementById("subtotal").innerText = price;
   var fee = document.getElementById("fee").innerText;
@@ -20,17 +20,18 @@ function OrderNow(event) {
   } else {
     amount.innerText = parseInt(amount.innerText) + price;
   }
-  let total= amount.innerText
-  let delevry=fees.innerText
+  let total = amount.innerText;
+  let delevry = fees.innerText;
   setCookie("myCookie", total, delevry, 7);
   flag = true;
 }
 function setCookie(name, value1, value2, expirationDays) {
-  var combinedValue = value1 + ';' + value2;
+  var combinedValue = value1 + ";" + value2;
   var date = new Date();
-  date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+  date.setTime(date.getTime() + expirationDays * 24 * 60 * 60 * 1000);
   var expires = "expires=" + date.toUTCString();
-  document.cookie = name + "=" + encodeURIComponent(combinedValue) + ";" + expires + ";path=/";
+  document.cookie =
+    name + "=" + encodeURIComponent(combinedValue) + ";" + expires + ";path=/";
 }
 function SendMessage() {
   confirm("You ordered: " + arr);

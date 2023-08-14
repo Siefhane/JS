@@ -15,8 +15,6 @@ button:hover {
 #yourCart {
   background-color: #f1ae0e;
 }
-#main {
-}
 #leftSection {
   justify-content: space-between;
 }
@@ -33,7 +31,7 @@ button:hover {
   flex: 1;
   flex-basis: 50%;
 }
-section{
+section {
   text-align: center;
 }
 
@@ -67,7 +65,7 @@ table {
 p {
   padding-bottom: 30px;
 }
-#centerSection{
+#centerSection {
   text-align: center;
   margin: auto;
 }
@@ -78,9 +76,9 @@ p {
   font-size: 20px;
   color: black;
 }
-#main p{
+#main p {
   margin-left: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   color: #fffefa;
 }
