@@ -13,6 +13,7 @@ body {
   margin: auto;
   border-radius: 60px;
   padding: 5% 15%;
+  margin-top: 40px;
 }
 #svgcontent {
   display: flex;
@@ -86,7 +87,7 @@ body {
   background-size: 700px 950px;
   background-size: cover;
   width: 70%;
-  height: 500px;
+  height: 507px;
   border: 2px solid;
   border-radius: 50px;
   color: rgb(27, 25, 25);
@@ -125,12 +126,15 @@ input[type="button"] {
   border: 0;
   border-radius: 30px;
   cursor: pointer;
+  position: relative;
+  top: 12px;
 }
 footer {
   margin-top: 1%;
   text-align: center;
   background-color: #99e54d;
   padding: 20px;
+  height: 167px;
 }
 
 @media screen and (max-width: 800px) {
