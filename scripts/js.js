@@ -31,9 +31,9 @@ var input=document.getElementById('pay')
 var loading=document.getElementById('loading')
 var Tvalue=document.getElementById('Tvalue')
 dateI.innerText=date
-CODE.innerText=randomNumber
-Dvalue.innerText=value2
-Tvalue.innerText=value1
+CODE.innerText="#"+" "+randomNumber
+Dvalue.innerText= value2 + "  "+"$"
+Tvalue.innerText= value1 + "  "+"$"
 var interval
 loading.style.display="none"
 function paynow(){
@@ -42,5 +42,5 @@ function paynow(){
     interval=setInterval(()=>{
         input.value="Pay now"
         loading.style.display="none"
-        },8000)
+        },9000)
 }

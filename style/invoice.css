@@ -4,7 +4,7 @@ body{
 .container{
     background-color: aliceblue;
     width: 540px;
-    height: 600px;
+    height: 500px;
     margin: auto;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -21,13 +21,13 @@ body{
 #head{
     display: flex;
     flex-direction: column;
-    font-size: 23px;
+    font-size: 20px;
     width: 100%;
-    margin-bottom:60px ;
+    margin-bottom:20px ;
 }
 #head h1{
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
     font-family:'Courier New', Courier, monospace;
 
 }
@@ -35,7 +35,7 @@ body{
     font-family:'Courier New', Courier, monospace;
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
 }
 #code{
@@ -46,22 +46,23 @@ body{
     flex-direction: column;
     font-size: 23px;
     width: 100%;
-    margin-bottom:60px ;
+    margin-bottom:30px ;
 }
 #total{
     width: 95%;
-    height: 40px;
-    font-size: 38px;
+    height: 18px;
+    font-size: 30px;
     margin: auto;
     color: #686868;
     font-family:'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-
+    position: relative;
+    top:40px;
 }
 footer{
     position: relative;
-    top: 200px;
+    top: 215px;
     width: 100%;
     height: 16%;
     display: flex;
@@ -69,7 +70,7 @@ footer{
     align-items: center;
 }
 input{
-    width: 440px;
+    width: 80%;
     height: 90%;
     background-color: #99e54d;
     border: 0;
@@ -92,12 +93,12 @@ input{
 .loading p{
     position: relative;
     left: 120%;
-    bottom: 16%;
+    bottom: 29%;
     font-size: 28px;
 }
 .outer-circle {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgba(255, 251, 251, 0.568);
     position: relative;
