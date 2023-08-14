@@ -80,6 +80,9 @@ p {
 }
 #main p{
   margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #f1ae0e;
 }
 #centerSection button {
   background-color: #f1ae0e;
@@ -91,6 +94,7 @@ p {
   font-size: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  right: 70px;
 }
 #centerSection button:active {
   background-color: #f1ae0e;
