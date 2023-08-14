@@ -1,168 +1,151 @@
 /* Start Global */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-body {
-    
-}
-
 .container {
-    width:1200px;
-    margin: auto;
+  width: 1200px;
+  margin: auto;
 }
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar,
 .header {
-   min-width: 1200px
+  min-width: 1200px;
 }
 /* End Global */
 
 /* Start Navbar */
 .navbar {
-   font-size: 18px;
-   height: 0;
-   color: #FFF;
-   position: relative;
-   z-index: 2;
+  font-size: 18px;
+  height: 0;
+  color: #fff;
+  position: relative;
+  z-index: 2;
 }
 .navbar .brandName {
-    float: left;
-    width: 50%;
-    font-weight: 800;
-    color: #f7600ecc;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-   
-     
+  float: left;
+  width: 50%;
+  font-weight: 800;
+  color: #f7600ecc;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 .navbar .links {
-    float: left;
-    width: 50%;
-    margin-top: 15px
-    
-    
+  float: left;
+  width: 50%;
+  margin-top: 15px;
 }
 .navbar .links li {
-    display: inline-block;
-    padding: 10px 0;
-    margin: 0 10px;
-    border-bottom: 2px solid transparent;  
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
 }
 .navbar .links li a {
-   color: #FFF;
-   text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .navbar .links li a.active,
 .navbar .links li a:hover {
-   color: #f7600ecc;
+  color: #f7600ecc;
 }
 .navbar .links li.active,
-.navbar .links li:hover
-{
-     border-bottom: 2px solid #f7600ecc;
+.navbar .links li:hover {
+  border-bottom: 2px solid #f7600ecc;
 }
 /* End Navbar */
 
 /* Start Header */
 .header {
-    background: url("../images/ground.jpg");
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;  
+  background: url("../images/ground.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 .header .overlay {
-    background-color: rgba(0,0,0,0.7);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #FFF;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
-
 
 .header .bxslider {
-   height: 100%;
-   text-align: center;
-   line-height: 1.5;
-   /*bottom: 80px;*/
-   position: absolute;
-   top: 35%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.5;
+  /*bottom: 80px;*/
+  position: absolute;
+  top: 35%;
 }
 .header .bxslider li {
-   display: block;  
+  display: block;
 }
 .header .bxslider li h2 {
-   font-size: 50px;
-   text-transform: capitalize;
-   margin-bottom: 20px;
-   font-weight: 800;
-   line-height: 1.5;
-   font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
 }
 .header .bxslider li h2 span {
-   /*color: #1abc9c;*/
-   color: #f7600ecc;
-   
-    
+  /*color: #1abc9c;*/
+  color: #f7600ecc;
 }
 
-.header .bxslider li p
-{
-    margin-bottom: 5px;
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.5;
-    padding: 0 50px;
-    font-family: "Karla", sans-serif;
+.header .bxslider li p {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5;
+  padding: 0 50px;
+  font-family: "Karla", sans-serif;
 }
 /* End Header */
 
 /* Start sections */
 .our-section {
-   padding: 30px 0;
+  padding: 30px 0;
 }
 
 .upper {
-   text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .our-section .items-box {
-   overflow:hidden;
- 
-   
+  overflow: hidden;
 }
 .our-section .items-box .item {
-   float: left;
-   width: 31.33333%;
-   overflow:hidden;
-   margin-left: 1%;
-   margin-right: 1%;
-   margin-bottom: 12px;
-   border-radius: 15%;
-   position: relative
+  float: left;
+  width: 31.33333%;
+  overflow: hidden;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 12px;
+  border-radius: 15%;
+  position: relative;
 }
 .our-section .items-box .item img {
-   width: 100%;
-   height: 60vh;
+  width: 100%;
+  height: 60vh;
 }
 .our-section .items-box .item .text-center {
-   text-align: center;
-  
-
+  text-align: center;
 }
 .our-section .items-box .item .over {
   position: absolute;
@@ -171,62 +154,59 @@ ul {
   width: 100%;
   height: 100%;
   background-color: #f7600ecc;
-  color: #FFF;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  display: none
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: none;
 }
 .our-section .items-box .item:hover .over {
-  display: block
+  display: block;
 }
 .our-section .items-box .item .over h4 {
   font-size: 24px;
   margin-top: 100px;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 /* End sections */
 
 /********* Start Section About ********/
-.about
-{
- padding: 100px 0;
+.about {
+  padding: 100px 0;
 }
-.about .left{  
- float: left; 
- width: 50%; 
- margin-top: 40px; 
+.about .left {
+  float: left;
+  width: 50%;
+  margin-top: 40px;
 }
-.about .right{  
-   float: right;  
-   width: 50%; 
-   margin-top: 40px;  
-  }
-.about-content span
-{
-    font-family: "Cookie", cursive;
-    display: block;
-    font-size: 30px;
-    color: #f7600ecc;
+.about .right {
+  float: right;
+  width: 50%;
+  margin-top: 40px;
 }
-.about-content h2
-{
-    font-weight: 800;
-    text-transform: capitalize;
-    font-size: 33px;
-    line-height: 1.3;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
+.about-content span {
+  font-family: "Cookie", cursive;
+  display: block;
+  font-size: 30px;
+  color: #f7600ecc;
+}
+.about-content h2 {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 33px;
+  line-height: 1.3;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 .about-content .lead {
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    color: #555;
-    line-height: 30px;
-    font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 30px;
+  font-family: "Karla", sans-serif;
 }
 /********* End Section About ********/
 /* End My Framework */

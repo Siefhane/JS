@@ -8,18 +8,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
       rel="stylesheet"
-    />   
+    />
     <!-- My Css Files -->
     <link rel="stylesheet" href="/CSS/web.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/CSS/font-awesome.min.css" />
-
     <link rel="stylesheet" href="/style/style.css" />
     <link rel="stylesheet" href="/style/page1.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/CSS/font-awesome.min.css" />
 
     <title>Document</title>
   </head>
   <body>
+<<<<<<< HEAD
       <!-- Start Navigation Bar -->
       <div class="navbar">
         <div class="container">
@@ -34,49 +34,61 @@
                    
             </ul>
             <div class="clearfix"></div>
+=======
+    <!-- Start Navigation Bar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="brandName">
+          <h2>Restaurant</h2>
+>>>>>>> 9521dcb7ba4120dccf2d3a66aa838ad9847c2e98
         </div>
+        <ul class="links">
+          <li class="active"><a href="#"> Home </a></li>
+          <li><a href="about.html" data-value="ser"> About </a></li>
+          <li><a href="#" data-value="test"> Menu </a></li>
+          <li><a href="#" data-value="port"> Contact </a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
     </div>
     <!-- End Navigation Bar -->
-    
+
     <!-- Start Header -->
     <div class="header">
-     
-        <div class="overlay">
-          <ul class="bxslider">
-            <li>
-                <h2> Welcome To <span> Our Restaurant</span></h2>
-                <p> Enjoy Our Delicious Meal</p>
-            </li>
-          
-          </ul>
-        </div>
-        
+      <div class="overlay">
+        <ul class="bxslider">
+          <li>
+            <h2>Welcome To <span> Our Restaurant</span></h2>
+            <p>Enjoy Our Delicious Meal</p>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- End Header -->
     <!-- Start Our Sections -->
     <div class="our-section text-center">
-        <div class="container">
-            <div class="items-box">
-                <div class="item">
-                   <img src="/images/1.jpg" alt="item1" />
-                   <div class="over text-center">
-                     <h4 class="upper">FOOD SOURCING</h4>
-                   </div>
-                </div>
-                <div class="item">
-                    <img src="/images/2.jpg" alt="item2" />
-                    <div class="over text-center">
-                        <h4 class="upper">MENU DEVELOPMENT</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/images/3.jpg" alt="item3" />
-                    <div class="over text-center">
-                        <h4 class="upper">RESTAURANT</h4>
-                    </div>
-                </div>
-            </div> 
+      <div class="container">
+        <div class="items-box">
+          <div class="item">
+            <img src="/images/1.jpg" alt="item1" />
+            <div class="over text-center">
+              <h4 class="upper">FOOD SOURCING</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/images/2.jpg" alt="item2" />
+            <div class="over text-center">
+              <h4 class="upper">MENU DEVELOPMENT</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="/images/3.jpg" alt="item3" />
+            <div class="over text-center">
+              <h4 class="upper">RESTAURANT</h4>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- End Our Sections -->
     <section>
@@ -85,7 +97,7 @@
           <p class="price">$27</p>
           <h4>beef with ginger</h4>
           <div class="detail">
-            <p>
+            <p class="para">
               Article evident arrived express highest men did boy. Mistress
               sensible entirely am so. Quick can manor smart money hopes worth
               too. Comfort produce husband boy her had hearing. Law others
@@ -155,24 +167,32 @@
     </header>
     <article id="mainwrapper">
       <section>
-        <img src="https://placehold.co/300x300" alt="" />
+        <img src="/image/pizza.jpg" alt="" />
         <p class="food">hot pizza</p>
-        <button>read more</button>
+        <button onclick="window.location.href='/Menu/menu.html'">
+          read more
+        </button>
       </section>
       <section>
-        <img src="https://placehold.co/300x300" alt="" />
-        <p class="food">hot pizza</p>
-        <button>read more</button>
+        <img src="/image/salads.jpg" alt="" />
+        <p class="food">Salads</p>
+        <button onclick="window.location.href='/Menu/menu.html'">
+          read more
+        </button>
       </section>
       <section>
-        <img src="https://placehold.co/300x300" alt="" />
-        <p class="food">hot pizza</p>
-        <button>read more</button>
+        <img src="/image/dessert.jpg" alt="" />
+        <p class="food">dessert</p>
+        <button onclick="window.location.href='/Menu/menu.html'">
+          read more
+        </button>
       </section>
       <section>
-        <img src="https://placehold.co/300x300" alt="" />
-        <p class="food">hot pizza</p>
-        <button>read more</button>
+        <img src="/image/drinks.jpg" alt="" />
+        <p class="food">drinks</p>
+        <button onclick="window.location.href='/Menu/menu.html'">
+          read more
+        </button>
       </section>
       <!-- </article>                   askkkkk  -->
       <!-- <article id="arc2"> -->
@@ -188,11 +208,11 @@
           melancholy sympathize discretion led. Oh feel if up to till like.
         </p>
 
-        <img src="https://placehold.co/300x300" alt="" />
+        <img src="/image/chicken-salad.jpg" alt="" />
       </section>
     </article>
     <div id="divcover">
-      <div id="circle"><span>40%</span> business lunch</div>
+      <div id="circle"><span>40%</span> Business Lunch</div>
       <h2>Keep up to date with us</h2>
       <p>Sample text. Click to select the Text Element</p>
       <input type="text" /> <input type="button" value="SUBMIT" />
@@ -263,8 +283,8 @@
           </g>
         </svg>
 
-        <h2>chart to us</h2>
-        <h3>our friendly team is here to help</h3>
+        <h2>Chart to us</h2>
+        <h3>Our friendly team is here to help</h3>
         <p>hi@ourcompany.com</p>
       </div>
       <div class="introtext">
@@ -332,9 +352,9 @@
           </g>
         </svg>
 
-        <h2>office</h2>
-        <h3>come say hello at our office HQ</h3>
-        <p>location</p>
+        <h2>Office</h2>
+        <h3>Come say hello at our office HQ</h3>
+        <p>Location</p>
       </div>
       <div class="introtext">
         <svg
@@ -383,9 +403,9 @@
           </g>
         </svg>
 
-        <h2>phone</h2>
+        <h2>Phone</h2>
         <h3>Mon-Fri from 8am to 5pm</h3>
-        <p>hi@ourcompany.com</p>
+        <p>+1(555)000-000</p>
       </div>
     </article>
     <footer>

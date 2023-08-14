@@ -1,14 +1,18 @@
 var amount = document.getElementById("amount");
 amount.innerText = 0;
+var arr = new Array();
 var flag = false;
 function OrderNow(event) {
   document.getElementById("default").style.display = "block";
   document.getElementById("noCart").style.display = "none";
   console.log(plate)
   var price = parseInt(
-    document.getElementById(event.target.className).innerText
+    document.getElementById(event.target.className).textContent
   );
-  console.log(price);
+  arr.unshift(
+    document.getElementById("p" + event.target.className.substring(4)).innerText
+  );
+  console.log(arr[0]);
   document.getElementById("subtotal").innerText = price;
   var fee = document.getElementById("fee").innerText;
   var fees = document.getElementById("fee");
@@ -28,4 +32,7 @@ function setCookie(name, value1, value2, expirationDays) {
   date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
   var expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + encodeURIComponent(combinedValue) + ";" + expires + ";path=/";
+}
+function SendMessage() {
+  confirm("You ordered: " + arr);
 }

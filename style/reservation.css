@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+form {
+  padding: 50px;
+}
+h1 {
+  position: relative;
+  top: 60px;
+}
+h2 {
+  color: #99e54d;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+button {
+  width: 80%;
+  padding: 30px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #f1ae0e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#main {
+  width: 60%;
+  margin: auto;
+  margin-top: 7%;
+  box-shadow: #f1ae0e 10px 10px 20px inset, #99e54d 10px 10px 20px;
+  text-align: center;
+}
+#rad {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+#rad label {
+  margin: 0 20px;
+}
